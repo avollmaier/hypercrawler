@@ -13,3 +13,6 @@
 [submodule "hypercrawler-supplier-service"]
 	path = hypercrawler-supplier-service
 	url = https://github.com/avollmaier/hypercrawler-supplier-service
+[submodule "hypercrawler-config-repo"]
+	path = hypercrawler-config-repo
+	url = https://github.com/avollmaier/hypercrawler-config-repo
