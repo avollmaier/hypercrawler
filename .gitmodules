@@ -1,0 +1,15 @@
+[submodule "hypercrawler-discovery-service"]
+	path = hypercrawler-discovery-service
+	url = https://github.com/avollmaier/hypercrawler-discovery-service
+[submodule "hypercrawler-deployment"]
+	path = hypercrawler-deployment
+	url = https://github.com/avollmaier/hypercrawler-deployment
+[submodule "hypercrawler-edge-service"]
+	path = hypercrawler-edge-service
+	url = https://github.com/avollmaier/hypercrawler-edge-service
+[submodule "hypercrawler-config-service"]
+	path = hypercrawler-config-service
+	url = https://github.com/avollmaier/hypercrawler-config-service
+[submodule "hypercrawler-supplier-service"]
+	path = hypercrawler-supplier-service
+	url = https://github.com/avollmaier/hypercrawler-supplier-service
