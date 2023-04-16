@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/edge-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/edge-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hypercrawler.iml" filepath="$PROJECT_DIR$/.idea/hypercrawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/supplier-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/supplier-service.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supplier-service.test.iml" filepath="$PROJECT_DIR$/.idea/modules/supplier-service.test.iml" />
     </modules>
   </component>
 </project>
