@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/edge-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/edge-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hypercrawler.iml" filepath="$PROJECT_DIR$/.idea/hypercrawler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supplier-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/supplier-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/manager-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/manager-service.main.iml" />
     </modules>
   </component>
 </project>
