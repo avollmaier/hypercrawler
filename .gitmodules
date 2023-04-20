@@ -10,9 +10,9 @@
 [submodule "hypercrawler-config-service"]
 	path = hypercrawler-config-service
 	url = https://github.com/avollmaier/hypercrawler-config-service
-[submodule "hypercrawler-manager-service"]
-	path = hypercrawler-manager-service
-	url = https://github.com/avollmaier/hypercrawler-manager-service
 [submodule "hypercrawler-config-repo"]
 	path = hypercrawler-config-repo
 	url = https://github.com/avollmaier/hypercrawler-config-repo
+[submodule "hypercrawler-manager-service"]
+	path = hypercrawler-manager-service
+	url = https://github.com/avollmaier/hypercrawler-manager-service.git
