@@ -16,3 +16,6 @@
 [submodule "hypercrawler-manager-service"]
 	path = hypercrawler-manager-service
 	url = https://github.com/avollmaier/hypercrawler-manager-service.git
+[submodule "hypercrawler-prioritizer-service"]
+	path = hypercrawler-prioritizer-service
+	url = git@github.com:avollmaier/hypercrawler-prioritizer-service.git

@@ -8,5 +8,6 @@
     <mapping directory="$PROJECT_DIR$/hypercrawler-discovery-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-edge-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-manager-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hypercrawler-prioritizer-service" vcs="Git" />
   </component>
 </project>
