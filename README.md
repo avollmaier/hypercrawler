@@ -34,6 +34,11 @@ scalable application
 
 [![Commit Stage](https://github.com/avollmaier/hypercrawler-discovery-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-discovery-service/actions/workflows/commit-stage.yml)
 
+### prioritizer-service
+
+[![Commit Stage](https://github.com/avollmaier/hypercrawler-prioritizer-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-prioritizer-service/actions/workflows/commit-stage.yml)
+
+
 ## Prerequisites
 
 Chapter after chapter, you'll build, containerize, and deploy cloud native applications. Along the journey, you will
