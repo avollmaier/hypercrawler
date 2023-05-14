@@ -1,0 +1,30 @@
+
+### POST a new crawler
+POST http://{{host}}:9003/crawlers
+Content-Type: application/json
+
+{
+  "name": "crawler1",
+  "config": {
+    "startUrls": [
+      "http://www.007museum.com/"
+    ]
+  }
+}
+
+### GET all crawlers
+GET http://{{host}}:9003/crawlers
+
+### GET a crawler
+GET http://{{host}}:9003/crawlers/{{crawlerId}}
+
+
+### DELETE a crawler
+DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
+
+### PUT a crawler's status
+PUT http://{{host}}:9003/crawlers/5593d02b-eb9c-41ae-a570-ebed84c56682/start
+
+
+
+

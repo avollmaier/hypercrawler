@@ -38,6 +38,13 @@ scalable application
 
 [![Commit Stage](https://github.com/avollmaier/hypercrawler-prioritizer-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-prioritizer-service/actions/workflows/commit-stage.yml)
 
+### crawler-service
+
+[![Commit Stage](https://github.com/avollmaier/hypercrawler-crawler-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-crawler-service/actions/workflows/commit-stage.yml)
+
+### filter-service
+
+[![Commit Stage](https://github.com/avollmaier/hypercrawler-filter-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-filter-service/actions/workflows/commit-stage.yml)
 
 ## Prerequisites
 

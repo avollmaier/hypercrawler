@@ -4,6 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-config-repo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-config-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hypercrawler-crawler-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-deployment" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-discovery-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/hypercrawler-edge-service" vcs="Git" />
