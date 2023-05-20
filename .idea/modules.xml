@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/crawler-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/crawler-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/edge-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/edge-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filter-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/filter-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hypercrawler.iml" filepath="$PROJECT_DIR$/.idea/hypercrawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/manager-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/manager-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/prioritizer-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/prioritizer-service.main.iml" />
