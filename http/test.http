@@ -23,7 +23,7 @@ GET http://{{host}}:9003/crawlers/{{crawlerId}}
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/f0bac1de-56a5-4292-9273-c67584652d76/start
+PUT http://{{host}}:9003/crawlers/f0bac1de-56a5-4292-9273-c67584652d76/run
 
 
 
