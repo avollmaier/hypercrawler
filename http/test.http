@@ -4,10 +4,52 @@ POST http://{{host}}:9003/crawlers
 Content-Type: application/json
 
 {
-  "name": "nsfdsinas crawler",
-  "config": {
-    "startUrls": [
-      "https://www.orf.at/"
+  "id":"ae683f02-7a5c-4a79-9c5c-ab93770c46f5",
+  "name":"Test Crawler",
+  "status":"CREATED",
+  "config":{
+    "indexPrefix":"crawler_",
+    "schedule":"0 0 0 1 1 ? 2099",
+    "startUrls":[
+      "https://www.orf.at"
+    ],
+    "siteExclusionPatterns":[
+      "https://www.google.com/**"
+    ],
+    "queryParameterExclusionPatterns":[
+      "utm_*"
+    ],
+    "requestOptions":{
+      "proxy":"http://localhost:8080",
+      "requestTimeout":1000,
+      "retries":3,
+      "headers":[
+        {
+          "name":"User-Agent",
+          "value":"Mozilla/5.0 (compatible"
+        }
+      ]
+    },
+    "robotOptions":{
+      "ignoreRobotRules":true,
+      "ignoreRobotNoIndex":true,
+      "ignoreRobotNoFollowTo":true
+    },
+    "actions":[
+      {
+        "indexName":"test_index",
+        "pathsToMatch":[
+          "http://www.foufos.gr/**"
+        ],
+        "selectorsToMatch":[
+          ".products",
+          "!.featured"
+        ],
+        "fileTypesToMatch":[
+          "HTML",
+          "PDF"
+        ]
+      }
     ]
   }
 }
@@ -23,7 +65,10 @@ GET http://{{host}}:9003/crawlers/{{crawlerId}}
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/f0bac1de-56a5-4292-9273-c67584652d76/run
+PUT http://{{host}}:9003/crawlers/1d3de9c0-6f1a-4499-84ba-67413991d61c/run
+
+### PUT a crawler's status
+PUT http://{{host}}:9003/crawlers/1d3de9c0-6f1a-4499-84ba-67413991d61c/pause
 
 
 
