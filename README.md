@@ -30,10 +30,6 @@ scalable application
 
 [![Commit Stage](https://github.com/avollmaier/hypercrawler-manager-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-manager-service/actions/workflows/commit-stage.yml)
 
-### discovery-service
-
-[![Commit Stage](https://github.com/avollmaier/hypercrawler-discovery-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-discovery-service/actions/workflows/commit-stage.yml)
-
 ### frontier-service
 
 [![Commit Stage](https://github.com/avollmaier/hypercrawler-frontier-service/actions/workflows/commit-stage.yml/badge.svg)](https://github.com/avollmaier/hypercrawler-frontier-service/actions/workflows/commit-stage.yml)

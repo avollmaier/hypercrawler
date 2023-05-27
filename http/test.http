@@ -11,7 +11,7 @@ Content-Type: application/json
     "indexPrefix":"crawler_",
     "schedule":"0 0 0 1 1 ? 2099",
     "startUrls":[
-      "https://www.orf.at"
+      "https://wikipedia.at/"
     ],
     "siteExclusionPatterns":[
       "https://www.google.com/**"
@@ -57,19 +57,21 @@ Content-Type: application/json
 ### GET all crawlers
 GET http://{{host}}:9003/crawlers
 
+###
+GET http://{{host}}:9003/crawlers/1262daa4-4427-48a9-b033-16d56641bcab/status
+
+
 ### GET a crawler
 GET http://{{host}}:9003/crawlers/{{crawlerId}}
-
 
 ### DELETE a crawler
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/1d3de9c0-6f1a-4499-84ba-67413991d61c/run
+PUT http://{{host}}:9003/crawlers/7be187cd-2d52-4300-8311-718140766f11/run
 
 ### PUT a crawler's status
 PUT http://{{host}}:9003/crawlers/1d3de9c0-6f1a-4499-84ba-67413991d61c/pause
-
 
 
 

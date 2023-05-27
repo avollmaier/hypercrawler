@@ -1,6 +1,3 @@
-[submodule "hypercrawler-discovery-service"]
-	path = hypercrawler-discovery-service
-	url = https://github.com/avollmaier/hypercrawler-discovery-service
 [submodule "hypercrawler-deployment"]
 	path = hypercrawler-deployment
 	url = https://github.com/avollmaier/hypercrawler-deployment
