@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/frontier-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/frontier-service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hypercrawler.iml" filepath="$PROJECT_DIR$/.idea/hypercrawler.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/manager-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/manager-service.main.iml" />
     </modules>
