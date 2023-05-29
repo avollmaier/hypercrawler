@@ -4,48 +4,51 @@ POST http://{{host}}:9003/crawlers
 Content-Type: application/json
 
 {
-  "id":"ae683f02-7a5c-4a79-9c5c-ab93770c46f5",
-  "name":"Test Crawler",
-  "status":"CREATED",
-  "config":{
-    "indexPrefix":"crawler_",
-    "schedule":"0 0 0 1 1 ? 2099",
-    "startUrls":[
-      "https://wikipedia.at/"
+  "id": "ae683f02-7a5c-4a79-9c5c-ab93770c46f5",
+  "name": "Test Crawler",
+  "status": "CREATED",
+  "config": {
+    "indexPrefix": "crawler_",
+    "schedule": "0 0 0 1 1 ? 2099",
+    "startUrls": [
+      "https://orf.at/"
     ],
-    "siteExclusionPatterns":[
+    "siteExclusionPatterns": [
       "https://www.google.com/**"
     ],
-    "queryParameterExclusionPatterns":[
+    "queryParameterExclusionPatterns": [
       "utm_*"
     ],
-    "requestOptions":{
-      "proxy":"http://localhost:8080",
-      "requestTimeout":1000,
-      "retries":3,
-      "headers":[
+    "requestOptions": {
+      "proxy": {
+        "host": "localhost",
+        "port": 8080
+      },
+      "requestTimeout": 1000,
+      "retries": 3,
+      "headers": [
         {
-          "name":"User-Agent",
-          "value":"Mozilla/5.0 (compatible"
+          "name": "User-Agent",
+          "value": "Mozilla/5.0 (compatible"
         }
       ]
     },
-    "robotOptions":{
-      "ignoreRobotRules":true,
-      "ignoreRobotNoIndex":true,
-      "ignoreRobotNoFollowTo":true
+    "robotOptions": {
+      "ignoreRobotRules": true,
+      "ignoreRobotNoIndex": true,
+      "ignoreRobotNoFollowTo": true
     },
-    "actions":[
+    "actions": [
       {
-        "indexName":"test_index",
-        "pathsToMatch":[
+        "indexName": "test_index",
+        "pathsToMatch": [
           "http://www.foufos.gr/**"
         ],
-        "selectorsToMatch":[
+        "selectorsToMatch": [
           ".products",
           "!.featured"
         ],
-        "fileTypesToMatch":[
+        "fileTypesToMatch": [
           "HTML",
           "PDF"
         ]
@@ -68,10 +71,10 @@ GET http://{{host}}:9003/crawlers/{{crawlerId}}
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/7be187cd-2d52-4300-8311-718140766f11/run
+PUT http://{{host}}:9003/crawlers/f2e5ab4e-b953-4b99-8756-b4f8f3243c53/run
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/1d3de9c0-6f1a-4499-84ba-67413991d61c/pause
+PUT http://{{host}}:9003/crawlers/1509c6ed-564f-4654-bd8b-27060a7c07e5/pause
 
 
 
