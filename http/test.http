@@ -42,7 +42,7 @@ Content-Type: application/json
       {
         "indexName": "test_index",
         "pathsToMatch": [
-          "http://www.foufos.gr/**"
+          "https://orf.at/*"
         ],
         "selectorsToMatch": [
           ".products",
@@ -71,7 +71,7 @@ GET http://{{host}}:9003/crawlers/{{crawlerId}}
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/f2e5ab4e-b953-4b99-8756-b4f8f3243c53/run
+PUT http://{{host}}:9003/crawlers/3267acba-4302-4694-95a3-9110c0232c4b/run
 
 ### PUT a crawler's status
 PUT http://{{host}}:9003/crawlers/1509c6ed-564f-4654-bd8b-27060a7c07e5/pause
