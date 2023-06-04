@@ -13,17 +13,15 @@ Content-Type: application/json
     "startUrls": [
       "https://orf.at/"
     ],
-    "siteExclusionPatterns": [
-      "https://www.google.com/**"
-    ],
-    "queryParameterExclusionPatterns": [
-      "utm_*"
-    ],
+    "filterOptions": {
+      "siteExclusionPatterns": [
+        ".*oesterreich.orf.*",
+        ".*assets.*"
+      ],
+      "queryParameterExclusionPatterns": [
+      ]
+    },
     "requestOptions": {
-      "proxy": {
-        "host": "localhost",
-        "port": 8080
-      },
       "requestTimeout": 1000,
       "retries": 3,
       "headers": [
@@ -32,11 +30,6 @@ Content-Type: application/json
           "value": "Mozilla/5.0 (compatible"
         }
       ]
-    },
-    "robotOptions": {
-      "ignoreRobotRules": true,
-      "ignoreRobotNoIndex": true,
-      "ignoreRobotNoFollowTo": true
     },
     "actions": [
       {
@@ -48,7 +41,7 @@ Content-Type: application/json
           ".products",
           "!.featured"
         ],
-        "fileTypesToMatch": [
+        "contentTypesToMatch": [
           "HTML",
           "PDF"
         ]
@@ -65,13 +58,13 @@ GET http://{{host}}:9003/crawlers/1262daa4-4427-48a9-b033-16d56641bcab/status
 
 
 ### GET a crawler
-GET http://{{host}}:9003/crawlers/{{crawlerId}}
+GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
 
 ### DELETE a crawler
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/3267acba-4302-4694-95a3-9110c0232c4b/run
+PUT http://{{host}}:9003/crawlers/836aa259-9645-4dd1-9e17-759b898516dd/run
 
 ### PUT a crawler's status
 PUT http://{{host}}:9003/crawlers/1509c6ed-564f-4654-bd8b-27060a7c07e5/pause
