@@ -11,18 +11,17 @@ Content-Type: application/json
     "indexPrefix": "crawler_",
     "schedule": "0 0 0 1 1 ? 2099",
     "startUrls": [
-      "https://orf.at/"
+      "https://tv.orf.at/"
     ],
     "filterOptions": {
       "siteExclusionPatterns": [
-        ".*oesterreich.orf.*",
-        ".*assets.*"
+        ".*news.orf.*"
       ],
       "queryParameterExclusionPatterns": [
       ]
     },
     "requestOptions": {
-      "requestTimeout": 1000,
+      "requestTimeout": 2000,
       "retries": 3,
       "headers": [
         {
@@ -35,15 +34,12 @@ Content-Type: application/json
       {
         "indexName": "test_index",
         "pathsToMatch": [
-          "https://orf.at/*"
+          "https://orf.at/.*"
         ],
         "selectorsToMatch": [
-          ".products",
-          "!.featured"
         ],
         "contentTypesToMatch": [
-          "HTML",
-          "PDF"
+          "HTML"
         ]
       }
     ]
@@ -64,7 +60,7 @@ GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/836aa259-9645-4dd1-9e17-759b898516dd/run
+PUT http://{{host}}:9003/crawlers/dc8790a4-13c8-4f13-a3c5-6bc51958db9b/run
 
 ### PUT a crawler's status
 PUT http://{{host}}:9003/crawlers/1509c6ed-564f-4654-bd8b-27060a7c07e5/pause
