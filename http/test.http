@@ -11,7 +11,7 @@ Content-Type: application/json
     "indexPrefix": "crawler_",
     "schedule": "0 0 0 1 1 ? 2099",
     "startUrls": [
-      "https://tv.orf.at/"
+      "https://news.orf.at/"
     ],
     "filterOptions": {
       "siteExclusionPatterns": [
@@ -21,8 +21,8 @@ Content-Type: application/json
       ]
     },
     "requestOptions": {
-      "requestTimeout": 2000,
-      "retries": 3,
+      "requestTimeout": 500,
+      "retries": 1,
       "headers": [
         {
           "name": "User-Agent",
@@ -50,7 +50,7 @@ Content-Type: application/json
 GET http://{{host}}:9003/crawlers
 
 ###
-GET http://{{host}}:9003/crawlers/1262daa4-4427-48a9-b033-16d56641bcab/status
+GET http://{{host}}:9003/crawlers/bb1cf33c-5cf1-4285-b286-e5c8794c5b08/status
 
 
 ### GET a crawler
@@ -60,10 +60,10 @@ GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/dc8790a4-13c8-4f13-a3c5-6bc51958db9b/run
+PUT http://{{host}}:9003/crawlers/76039f7f-a794-4ff7-861c-3b9411466127/run
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/1509c6ed-564f-4654-bd8b-27060a7c07e5/pause
+PUT http://{{host}}:9003/crawlers/bb1cf33c-5cf1-4285-b286-e5c8794c5b08/pause
 
 
 
