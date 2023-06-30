@@ -4,14 +4,11 @@ POST http://{{host}}:9003/crawlers
 Content-Type: application/json
 
 {
-  "id": "ae683f02-7a5c-4a79-9c5c-ab93770c46f5",
   "name": "Test Crawler",
-  "status": "CREATED",
   "config": {
     "indexPrefix": "crawler_",
-    "schedule": "0 0 0 1 1 ? 2099",
     "startUrls": [
-      "https://news.orf.at/"
+      "https://github.com/neo4j/neo4j-ogm/issues/27"
     ],
     "filterOptions": {
       "siteExclusionPatterns": [
@@ -21,7 +18,7 @@ Content-Type: application/json
       ]
     },
     "requestOptions": {
-      "requestTimeout": 500,
+      "requestTimeout": 1500,
       "retries": 1,
       "headers": [
         {
@@ -50,7 +47,7 @@ Content-Type: application/json
 GET http://{{host}}:9003/crawlers
 
 ###
-GET http://{{host}}:9003/crawlers/bb1cf33c-5cf1-4285-b286-e5c8794c5b08/status
+GET http://{{host}}:9003/crawlers/78c81bdb-f157-4c32-9884-d30561c141c2/status
 
 
 ### GET a crawler
@@ -60,10 +57,10 @@ GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/76039f7f-a794-4ff7-861c-3b9411466127/run
+PUT http://{{host}}:9003/crawlers/f44e71cf-e038-4c51-ad5a-f5ab915acd26/run
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/bb1cf33c-5cf1-4285-b286-e5c8794c5b08/pause
+PUT http://{{host}}:9003/crawlers/f44e71cf-e038-4c51-ad5a-f5ab915acd26/pause
 
 
 
