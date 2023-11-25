@@ -8,12 +8,10 @@ Content-Type: application/json
   "config": {
     "indexPrefix": "crawler_",
     "startUrls": [
-      "https://github.com/neo4j/neo4j-ogm/issues/27"
+      "https://zamg.at/"
     ],
     "filterOptions": {
-      "siteExclusionPatterns": [
-        ".*news.orf.*"
-      ],
+      "siteExclusionPatterns": [],
       "queryParameterExclusionPatterns": [
       ]
     },
@@ -31,7 +29,7 @@ Content-Type: application/json
       {
         "indexName": "test_index",
         "pathsToMatch": [
-          "https://orf.at/.*"
+          "orf*"
         ],
         "selectorsToMatch": [
         ],
@@ -47,7 +45,7 @@ Content-Type: application/json
 GET http://{{host}}:9003/crawlers
 
 ###
-GET http://{{host}}:9003/crawlers/78c81bdb-f157-4c32-9884-d30561c141c2/status
+GET http://{{host}}:9003/crawlers/a32e8672-2e1b-4bed-ad11-48899fa6c41c/status
 
 
 ### GET a crawler
@@ -57,10 +55,10 @@ GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/f44e71cf-e038-4c51-ad5a-f5ab915acd26/run
+PUT http://{{host}}:9003/crawlers/a32e8672-2e1b-4bed-ad11-48899fa6c41c/run
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/f44e71cf-e038-4c51-ad5a-f5ab915acd26/pause
+PUT http://{{host}}:9003/crawlers/a32e8672-2e1b-4bed-ad11-48899fa6c41c/pause
 
 
 
