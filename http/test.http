@@ -8,7 +8,7 @@ Content-Type: application/json
   "config": {
     "indexPrefix": "crawler_",
     "startUrls": [
-      "https://zamg.at/"
+      "https://wikipedia.at/"
     ],
     "filterOptions": {
       "siteExclusionPatterns": [],
@@ -45,7 +45,7 @@ Content-Type: application/json
 GET http://{{host}}:9003/crawlers
 
 ###
-GET http://{{host}}:9003/crawlers/a32e8672-2e1b-4bed-ad11-48899fa6c41c/status
+GET http://{{host}}:9003/crawlers/70b4255b-3925-417c-b5dd-b86964d750ce/status
 
 
 ### GET a crawler
@@ -55,10 +55,10 @@ GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/a32e8672-2e1b-4bed-ad11-48899fa6c41c/run
+PUT http://{{host}}:9003/crawlers/6a375870-0116-4945-857a-90c28ac5ca31/run
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/a32e8672-2e1b-4bed-ad11-48899fa6c41c/pause
+PUT http://{{host}}:9003/crawlers/6a375870-0116-4945-857a-90c28ac5ca31/pause
 
 
 
