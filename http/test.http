@@ -8,7 +8,7 @@ Content-Type: application/json
   "config": {
     "indexPrefix": "crawler_",
     "startUrls": [
-      "https://wikipedia.at/"
+      "https://test.io/"
     ],
     "filterOptions": {
       "siteExclusionPatterns": [],
@@ -45,17 +45,18 @@ Content-Type: application/json
 GET http://{{host}}:9003/crawlers
 
 ###
-GET http://{{host}}:9003/crawlers/70b4255b-3925-417c-b5dd-b86964d750ce/status
+GET http://{{host}}:9003/crawlers/d131a691-d79e-4f2b-b64a-754be6d578ba/status
 
 
 ### GET a crawler
-GET http://{{host}}:9003/crawlers/76702747-b70e-4fde-a246-dcfb10879372
+GET http://{{host}}:9003/crawlers/6f9e5e84-4835-4470-80f0-e87befffeb01
 
 ### DELETE a crawler
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/6a375870-0116-4945-857a-90c28ac5ca31/run
+PUT http://{{host}}:9003/crawlers/81ac20c7-6fdd-4e76-ab3e-1790381e11a3/run
+
 
 ### PUT a crawler's status
 PUT http://{{host}}:9003/crawlers/6a375870-0116-4945-857a-90c28ac5ca31/pause
