@@ -8,7 +8,7 @@ Content-Type: application/json
   "config": {
     "indexPrefix": "crawler_",
     "startUrls": [
-      "https://test.io/"
+      "https://orf.at/"
     ],
     "filterOptions": {
       "siteExclusionPatterns": [],
@@ -55,7 +55,7 @@ GET http://{{host}}:9003/crawlers/6f9e5e84-4835-4470-80f0-e87befffeb01
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/81ac20c7-6fdd-4e76-ab3e-1790381e11a3/run
+PUT http://{{host}}:9003/crawlers/e3f30fa2-b8b1-49dc-b670-acc4c0add627/run
 
 
 ### PUT a crawler's status

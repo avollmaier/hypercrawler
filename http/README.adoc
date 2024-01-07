@@ -1,0 +1,79 @@
+= HTTP Requests for HyperCrawler
+:toc: macro
+:toc-title:
+
+toc::[]
+
+== Description
+
+This document describes the HTTP requests used in the HyperCrawler project. The requests are defined in the `request.http` file.
+
+== Getting Started
+
+=== Prerequisites
+
+Before running the requests, ensure you have the following installed:
+
+* IntelliJ IDEA 2023.3.2 or any other IDE that supports HTTP Client files
+* Access to the HyperCrawler API
+
+== Usage
+
+The `request.http` file contains several HTTP requests that interact with the HyperCrawler API. Here are some examples:
+
+=== POST a new crawler
+
+This request creates a new crawler with the provided configuration.
+
+[source,http]
+----
+POST http://{{host}}:9003/crawlers
+Content-Type: application/json
+
+{
+  "name": "Test Crawler",
+  "config": {
+    "indexPrefix": "crawler_",
+    "startUrls": [
+      "https://test.io/"
+    ],
+    // More configuration here...
+  }
+}
+----
+
+=== GET all crawlers
+
+This request retrieves all existing crawlers.
+
+[source,http]
+----
+GET http://{{host}}:9003/crawlers
+----
+
+=== GET a crawler
+
+This request retrieves a specific crawler by its ID.
+
+[source,http]
+----
+GET http://{{host}}:9003/crawlers/{{crawlerId}}
+----
+
+=== DELETE a crawler
+
+This request deletes a specific crawler by its ID.
+
+[source,http]
+----
+DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
+----
+
+=== PUT a crawler's status
+
+This request changes the status of a specific crawler by its ID.
+
+[source,http]
+----
+PUT http://{{host}}:9003/crawlers/{{crawlerId}}/run
+----
