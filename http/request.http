@@ -45,7 +45,7 @@ Content-Type: application/json
 GET http://{{host}}:9003/crawlers
 
 ###
-GET http://{{host}}:9003/crawlers/d131a691-d79e-4f2b-b64a-754be6d578ba/status
+GET http://{{host}}:9003/crawlers/6a83d210-1b73-4a78-ac94-fae009cbe371/status
 
 
 ### GET a crawler
@@ -55,7 +55,7 @@ GET http://{{host}}:9003/crawlers/6f9e5e84-4835-4470-80f0-e87befffeb01
 DELETE http://{{host}}:9003/crawlers/{{crawlerId}}
 
 ### PUT a crawler's status
-PUT http://{{host}}:9003/crawlers/e3f30fa2-b8b1-49dc-b670-acc4c0add627/run
+PUT http://{{host}}:9003/crawlers/1c1ffa60-117b-40ea-b926-d8de8d72fd1f/run
 
 
 ### PUT a crawler's status

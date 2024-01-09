@@ -141,7 +141,8 @@ def query_metric_values(metricnames):
         response = requests.get(PROMETHEUS_URL + RANGE_QUERY_API, params={'query': '{0}{{app="{1}"}}'.format(metric,CONTAINER), 'start': start_time, 'end': end_time, 'step': RESOLUTION})
         results = response.json()['data']['result']
         for value in results[0]['values']:
-            csvset[value[0]].append(value[1])
+            if value[0] in csvset.keys():
+                csvset[value[0]].append(value[1])
 
     return csvset
 
