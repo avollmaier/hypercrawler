@@ -1,0 +1,20 @@
+Durchlauf 1 Monolith
+
+{
+  "finishedAt": "2024-03-04T15:48:32Z",
+  "updatedAt": "2024-03-04T15:43:21Z"
+}
+Durchlauf 2 Monolith
+
+{
+  "finishedAt": "2024-03-04T16:43:12Z",
+  "updatedAt": "2024-03-04T16:41:38Z"
+}
+Durchlauf 3 Monolith
+
+
+{
+  "finishedAt": "2024-03-04T16:54:10Z",
+  "updatedAt": "2024-03-04T16:51:18Z"
+}
+
